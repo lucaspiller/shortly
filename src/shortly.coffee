@@ -1,4 +1,7 @@
 $ ->
   $('#save-button').click () ->
     input = $('#input-field').get(0).value
-    console.log "Hey, you clicked the button! This is what you've got:", input
+    deflated = RawDeflate.deflate input
+    base64 = Base64.toBase64 deflated
+
+    console.log input.length, base64.length
