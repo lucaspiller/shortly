@@ -12,75 +12,7 @@
   <body>
     <div id="content">
       <h1>Shortly</h1>
-      <textarea id="input-field">
-3.2.1 General Syntax
-
-   URIs in HTTP can be represented in absolute form or relative to some
-   known base URI [11], depending upon the context of their use. The two
-   forms are differentiated by the fact that absolute URIs always begin
-   with a scheme name followed by a colon. For definitive information on
-   URL syntax and semantics, see "Uniform Resource Identifiers (URI):
-   Generic Syntax and Semantics," RFC 2396 [42] (which replaces RFCs
-   1738 [4] and RFC 1808 [11]). This specification adopts the
-   definitions of "URI-reference", "absoluteURI", "relativeURI", "port",
-   "host","abs_path", "rel_path", and "authority" from that
-   specification.
-
-   The HTTP protocol does not place any a priori limit on the length of
-   a URI. Servers MUST be able to handle the URI of any resource they
-   serve, and SHOULD be able to handle URIs of unbounded length if they
-   provide GET-based forms that could generate such URIs. A server
-   SHOULD return 414 (Request-URI Too Long) status if a URI is longer
-   than the server can handle (see section 10.4.15).
-
-      Note: Servers ought to be cautious about depending on URI lengths
-      above 255 bytes, because some older client or proxy
-      implementations might not properly support these lengths.
-
-3.2.2 http URL
-
-   The "http" scheme is used to locate network resources via the HTTP
-   protocol. This section defines the scheme-specific syntax and
-   semantics for http URLs.
-
-   http_URL = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
-
-   If the port is empty or not given, port 80 is assumed. The semantics
-   are that the identified resource is located at the server listening
-   for TCP connections on that port of that host, and the Request-URI
-   for the resource is abs_path (section 5.1.2). The use of IP addresses
-   in URLs SHOULD be avoided whenever possible (see RFC 1900 [24]). If
-   the abs_path is not present in the URL, it MUST be given as "/" when
-   used as a Request-URI for a resource (section 5.1.2). If a proxy
-   receives a host name which is not a fully qualified domain name, it
-   MAY add its domain to the host name it received. If a proxy receives
-   a fully qualified domain name, the proxy MUST NOT change the host
-   name.
-
-3.2.3 URI Comparison
-
-   When comparing two URIs to decide if they match or not, a client
-   SHOULD use a case-sensitive octet-by-octet comparison of the entire
-   URIs, with these exceptions:
-
-      - A port that is empty or not given is equivalent to the default
-        port for that URI-reference;
-
-        - Comparisons of host names MUST be case-insensitive;
-
-        - Comparisons of scheme names MUST be case-insensitive;
-
-        - An empty abs_path is equivalent to an abs_path of "/".
-
-   Characters other than those in the "reserved" and "unsafe" sets (see
-   RFC 2396 [42]) are equivalent to their ""%" HEX HEX" encoding.
-
-   For example, the following three URIs are equivalent:
-
-      http://abc.com:80/~smith/home.html
-      http://ABC.com/%7Esmith/home.html
-      /ABC.com:/%7esmith/home.html">http://ABC.com:/%7esmith/home.html
-      </textarea>
+      <textarea id="input-field"></textarea>
       <button id="save-button">Save</button>
     </div>
   </body>
