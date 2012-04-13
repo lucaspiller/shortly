@@ -2,7 +2,30 @@
 <html>
   <head>
     <title>Shortly</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <style>
+      body {
+        padding-top: 60px;
+      }
+
+      input, textarea, button {
+        font: 15px 'Monaco', 'Bitstream Vera Sans', 'Courier', monospace;
+      }
+
+      textarea {
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+      }
+
+      #instructions {
+        margin-top: 2em;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <script type="text/javascript" src="vendor/jquery-1.7.1.js" async></script>
     <script type="text/javascript" src="vendor/base64.js" async></script>
     <script type="text/javascript" src="vendor/rawinflate.js" async></script>
@@ -10,10 +33,30 @@
     <script type="text/javascript" src="lib/shortly.js" async></script>
   </head>
   <body>
-    <div id="content">
-      <h1>Shortly</h1>
-      <textarea id="input-field"></textarea>
-      <button id="save-button">Save</button>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Shortly</a>
+          <p class="navbar-text pull-left">Serverless pastebin service</p>
+          <p class="navbar-text pull-right"><a href="https://github.com/lucaspiller/shortly">Fork me on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <textarea id="input-field"></textarea>
+        <button id="save-button" class="btn btn-primary btn-large">Save as URL</button>
+      </div>
+      <div id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Paste code into the text area.</li>
+          <li>Click <em>Save as URL</em>.</li>
+          <li>Copy the URL from the address bar.</li>
+          <li>Share!</li>
+        </ol>
+      </div>
     </div>
   </body>
 </html>
