@@ -1,4 +1,5 @@
 $ ->
+
   checksum = (string) ->
     chk = 0
     for i, chr of string
@@ -24,6 +25,9 @@ $ ->
 
     any: ->
       isMobile.Android() or isMobile.BlackBerry() or isMobile.iOS() or isMobile.Windows()
+
+  # Sets Textarea height for Mobile Devices
+  $("textarea").css({"height":"200px"}) if isMobile.any()
 
   $('#save-button').click () ->
     input = $('#input-field').get(0).value
