@@ -5,12 +5,33 @@ $ ->
       chk += chr.charCodeAt(0) * (i + 1)
     chk % 10
 
+  mobileCallBack = (encoded) ->
+    newURL = window.location.protocol + "//" + document.domain + window.location.pathname + "#" + encoded;
+    window.prompt("Your URL has been generated:", newURL);
+
+  isMobile =
+    Android: ->
+      (if navigator.userAgent.match(/Android/i) then true else false)
+
+    BlackBerry: ->
+      (if navigator.userAgent.match(/BlackBerry/i) then true else false)
+
+    iOS: ->
+      (if navigator.userAgent.match(/iPhone|iPad|iPod/i) then true else false)
+
+    Windows: ->
+      (if navigator.userAgent.match(/IEMobile/i) then true else false)
+
+    any: ->
+      isMobile.Android() or isMobile.BlackBerry() or isMobile.iOS() or isMobile.Windows()
+
   $('#save-button').click () ->
     input = $('#input-field').get(0).value
     deflated = RawDeflate.deflate input
     base64 = Base64.toBase64 deflated
     check = checksum base64
     encoded = base64 + check
+    mobileCallBack encoded  if isMobile.any()
     window.location.hash = encoded
 
   if window.location.hash
