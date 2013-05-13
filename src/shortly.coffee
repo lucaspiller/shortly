@@ -23,3 +23,4 @@ $ ->
       deflated = Base64.fromBase64 base64
       input = RawDeflate.inflate deflated
       $('#input-field').get(0).value = input
+
