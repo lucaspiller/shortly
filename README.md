@@ -24,6 +24,11 @@ This uses the following libraries:
 
 Fork, commit, send pull request, drink beer.
 
+## Press
+
+* [Shortly: a Serverless Pastebin Service - All Data is Stored in the URL](https://news.ycombinator.com/item?id=5696127) (2013)
+* [Show HN: Shortly, a serverless pastebin](https://news.ycombinator.com/item?id=3834643) (2012)
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">shortly</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/lucaspiller/shortly" property="cc:attributionName" rel="cc:attributionURL">Luca Spiller</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/lucaspiller/shortly" rel="dct:source">github.com</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/lucaspiller/shortly" rel="cc:morePermissions">https://github.com/lucaspiller/shortly</a>.
