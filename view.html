@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="js/base64.js"></script>
 	<script type="text/javascript" src="js/rawinflate.js"></script>
 	<script type="text/javascript" src="js/rawdeflate.js"></script>
-	<script type="text/javascript" src="js/shortly.js"></script>
+	<script type="text/javascript" src="js/shortly-view.js"></script>
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
@@ -26,8 +26,9 @@
 	</div>
 	<div class="container">
 		<div>
-			<textarea id="input-field"></textarea>
-			<button id="save-button" class="btn btn-primary btn-large">Save as URL</button>
+			<textarea id="input-field2" readonly></textarea>
+			<p>URL address :</p>
+			<textarea id="input-url" name="field" readonly onClick="this.select();"></textarea>
 		</div>
 		<div id="instructions">
 			<h2>Instructions</h2>

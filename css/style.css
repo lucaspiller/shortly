@@ -1,0 +1,7 @@
+body{padding-top:60px;}
+input,textarea,button{font:15px'Monaco','Bitstream Vera Sans','Courier',monospace;}
+input{width:100%;}
+#instructions{margin-top:2em;}
+#input-field{padding:10px;width:100%;height:400px;}
+#input-field2{padding:10px;width:100%;height:340px;}
+#input-url{padding:10px;width:100%;height:40px;}
