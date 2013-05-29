@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="js/rawinflate.js"></script>
 	<script type="text/javascript" src="js/rawdeflate.js"></script>
 	<script type="text/javascript" src="js/shortly.js"></script>
+	<script type="text/javascript" src="http://rawgithub.com/ajaxorg/ace-builds/master/src-noconflict/ace.js" charset="utf-8"></script>
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
@@ -23,10 +24,11 @@
 				<p class="navbar-text pull-right"><a href="https://github.com/hmsintrepide/shortly">Fork me on GitHub</a></p>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<div class="container">
 		<div>
-			<textarea id="input-field"></textarea>
+			<div id="view" style="display:none;"><input id="input-url" name="field" type="text" readonly onClick="this.select();"></textarea></div>
+			<div id="input-field"></div>
 			<button id="save-button" class="btn btn-primary btn-large">Save as URL</button>
 		</div>
 		<div id="instructions">
