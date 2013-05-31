@@ -19,6 +19,7 @@ This uses the following libraries:
 * [jQuery](http://jquery.com/)
 * [js-base64](https://github.com/dankogai/js-base64)
 * [js-deflate](https://github.com/dankogai/js-deflate)
+* [ace](https://github.com/ajaxorg/ace-builds/)
 
 ## Get Involved
 
