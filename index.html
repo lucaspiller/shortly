@@ -6,15 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-	<script type="text/javascript" src="js/base64.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/base64.min.js"></script>
 	<script type="text/javascript" src="js/rawinflate.js"></script>
 	<script type="text/javascript" src="js/rawdeflate.js"></script>
 	<script type="text/javascript" src="js/shortly.js"></script>
-	<script type="text/javascript" src="src-min-noconflict/ace.js" charset="utf-8"></script>
+	<script type="text/javascript" src="src-min-noconflict/ace.js"></script>
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
@@ -35,127 +32,127 @@
 				</tr>
 				<tr>
 					<td>
-						<select>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/abap');">ABAP</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/actionscript');">ActionScript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/asciidoc');">AsciiDoc</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/autohotkey');">AutoHotKey</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/batchfile');">BatchFile</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/c9search');">C9Search</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/c_cpp');">C/C++</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/clojure');">Clojure</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/coffee');">CoffeeScript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/coldfusion');">ColdFusion</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/csharp');">C#</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/css');">CSS</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/curly');">Curly</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/dart');">Dart</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/diff');">Diff</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/dot');">Dot</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/erlang');">Erlang</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/forth');">Forth</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/freemarker');">FreeMarker</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/glsl');">Glsl</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/golang');">Go</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/groovy');">Groovy</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/haml');">HAML</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/haskell');">Haskell</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/haxe');">haXe</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/html');">HTML</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/html_ruby');">HTML (Ruby)</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/ini');">Ini</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/jade');">Jade</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/java');">Java</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/javascript');">JavaScript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/json');">JSON</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/jsoniq');">JSONiq</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/jsp');">JSP</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/jsx');">JSX</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/julia');">Julia</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/latex');">LaTeX</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/less');">LESS</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/liquid');">Liquid</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/lisp');">Lisp</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/livescript');">LiveScript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/logiql');">LogiQL</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/lsl');">LSL</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/lua');">Lua</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/luapage');">LuaPage</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/lucene');">Lucene</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/makefile');">Makefile</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/markdown');">Markdown</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/mushcode');">MUSHCode</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/objectivec');">Objective-C</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/ocaml');">OCaml</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/pascal');">Pascal</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/perl');">Perl</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/pgsql');">pgSQL</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/php');">PHP</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/powershell');">Powershell</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/prolog');">Prolog</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/properties');">Properties</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/python');">Python</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/r');">R</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/rdoc');">RDoc</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/rhtml');">RHTML</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/ruby');">Ruby</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/rust');">Rust</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/sass');">SASS</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/scad');">SCAD</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/scala');">Scala</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/scheme');">Scheme</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/scss');">SCSS</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/sh');">SH</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/snippets');">snippets</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/sql');">SQL</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/stylus');">Stylus</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/svg');">SVG</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/tcl');">Tcl</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/tex');">Tex</option>
-							<option selected onClick="ace.edit('input-field').getSession().setMode('ace/mode/text');">Text</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/textile');">Textile</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/toml');">Toml</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/typescript');">Typescript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/vbscript');">VBScript</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/velocity');">Velocity</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/xml');">XML</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/xquery');">XQuery</option>
-							<option onClick="ace.edit('input-field').getSession().setMode('ace/mode/yaml');">YAML</option>
+						<select id="language">
+							<option value="abap">ABAP</option>
+							<option value="actionscript">ActionScript</option>
+							<option value="asciidoc">AsciiDoc</option>
+							<option value="autohotkey">AutoHotKey</option>
+							<option value="batchfile">BatchFile</option>
+							<option value="c9search">C9Search</option>
+							<option value="c_cpp">C/C++</option>
+							<option value="clojure">Clojure</option>
+							<option value="coffee">CoffeeScript</option>
+							<option value="coldfusion">ColdFusion</option>
+							<option value="csharp">C#</option>
+							<option value="css">CSS</option>
+							<option value="curly">Curly</option>
+							<option value="dart">Dart</option>
+							<option value="diff">Diff</option>
+							<option value="dot">Dot</option>
+							<option value="erlang">Erlang</option>
+							<option value="forth">Forth</option>
+							<option value="freemarker">FreeMarker</option>
+							<option value="glsl">Glsl</option>
+							<option value="golang">Go</option>
+							<option value="groovy">Groovy</option>
+							<option value="haml">HAML</option>
+							<option value="haskell">Haskell</option>
+							<option value="haxe">haXe</option>
+							<option value="html">HTML</option>
+							<option value="html_ruby">HTML (Ruby)</option>
+							<option value="ini">Ini</option>
+							<option value="jade">Jade</option>
+							<option value="java">Java</option>
+							<option value="javascript">JavaScript</option>
+							<option value="json">JSON</option>
+							<option value="jsoniq">JSONiq</option>
+							<option value="jsp">JSP</option>
+							<option value="jsx">JSX</option>
+							<option value="julia">Julia</option>
+							<option value="latex">LaTeX</option>
+							<option value="less">LESS</option>
+							<option value="liquid">Liquid</option>
+							<option value="lisp">Lisp</option>
+							<option value="livescript">LiveScript</option>
+							<option value="logiql">LogiQL</option>
+							<option value="lsl">LSL</option>
+							<option value="lua">Lua</option>
+							<option value="luapage">LuaPage</option>
+							<option value="lucene">Lucene</option>
+							<option value="makefile">Makefile</option>
+							<option value="markdown">Markdown</option>
+							<option value="mushcode">MUSHCode</option>
+							<option value="objectivec">Objective-C</option>
+							<option value="ocaml">OCaml</option>
+							<option value="pascal">Pascal</option>
+							<option value="perl">Perl</option>
+							<option value="pgsql">pgSQL</option>
+							<option value="php">PHP</option>
+							<option value="powershell">Powershell</option>
+							<option value="prolog">Prolog</option>
+							<option value="properties">Properties</option>
+							<option value="python">Python</option>
+							<option value="r">R</option>
+							<option value="rdoc">RDoc</option>
+							<option value="rhtml">RHTML</option>
+							<option value="ruby">Ruby</option>
+							<option value="rust">Rust</option>
+							<option value="sass">SASS</option>
+							<option value="scad">SCAD</option>
+							<option value="scala">Scala</option>
+							<option value="scheme">Scheme</option>
+							<option value="scss">SCSS</option>
+							<option value="sh">SH</option>
+							<option value="snippets">snippets</option>
+							<option value="sql">SQL</option>
+							<option value="stylus">Stylus</option>
+							<option value="svg">SVG</option>
+							<option value="tcl">Tcl</option>
+							<option value="tex">Tex</option>
+							<option selected value="text">Text</option>
+							<option value="textile">Textile</option>
+							<option value="toml">Toml</option>
+							<option value="typescript">Typescript</option>
+							<option value="vbscript">VBScript</option>
+							<option value="velocity">Velocity</option>
+							<option value="xml">XML</option>
+							<option value="xquery">XQuery</option>
+							<option value="yaml">YAML</option>
 						</select>
 					</td>
 					<td>
-						<select>
-							<optgroup label="bright">
-								<option selected onClick="ace.edit('input-field').setTheme('ace/theme/chrome');">chrome</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/clouds');">clouds</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/crimson_editor');">crimson_editor</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/dawn');">dawn</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/dreamweaver');">dreamweaver</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/eclipse');">eclipse</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/github');">github</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/solarized_light');">solarized_light</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/textmate');">textmate</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/tomorrow');">tomorrow</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/xcode');">xcode</option>
+						<select id="theme">
+							<optgroup label="Bright">
+								<option selected value="chrome">Chrome</option>
+								<option value="clouds">Clouds</option>
+								<option value="crimson_editor">Crimson Editor</option>
+								<option value="dawn">Dawn</option>
+								<option value="dreamweaver">Dreamweaver</option>
+								<option value="eclipse">Eclipse</option>
+								<option value="github">Github</option>
+								<option value="solarized_light">Solarized Light</option>
+								<option value="textmate">Textmate</option>
+								<option value="tomorrow">Tomorrow</option>
+								<option value="xcode">xCode</option>
 							</optgroup>
-							<optgroup label="dark">
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/clouds_midnight');">clouds_midnight</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/cobalt');">cobalt</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/idle_fingers');">idle_fingers</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/kr_theme');">kr_theme</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/merbivore');">merbivore</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/merbivore_soft');">merbivore_soft</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/mono_industrial');">mono_industrial</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/monokai');">monokai</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/pastel_on_dark');">pastel_on_dark</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/solarized_dark');">solarized_dark</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/terminal');">terminal</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/tomorrow_night');">tomorrow_night</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/tomorrow_night_blue');">tomorrow_night_blue</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/tomorrow_night_bright');">tomorrow_night_bright</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/tomorrow_night_eighties');">tomorrow_night_eighties</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/twilight');">twilight</option>
-								<option onClick="ace.edit('input-field').setTheme('ace/theme/vibrant_ink');">vibrant_ink</option>
+							<optgroup label="Dark">
+								<option value="clouds_midnight">Clouds Midnight</option>
+								<option value="cobalt">Cobalt</option>
+								<option value="idle_fingers">Idle Fingers</option>
+								<option value="kr_theme">Kr Theme</option>
+								<option value="merbivore">Merbivore</option>
+								<option value="merbivore_soft">Merbivore Soft</option>
+								<option value="mono_industrial">Mono Industrial</option>
+								<option value="monokai">Monokai</option>
+								<option value="pastel_on_dark">Pastel on Dark</option>
+								<option value="solarized_dark">Solarized Dark</option>
+								<option value="terminal">Terminal</option>
+								<option value="tomorrow_night">Tomorrow Night</option>
+								<option value="tomorrow_night_blue">Tomorrow Night Blue</option>
+								<option value="tomorrow_night_bright">Tomorrow Night Bright</option>
+								<option value="tomorrow_night_eighties">Tomorrow Night Eighties</option>
+								<option value="twilight">Twilight</option>
+								<option value="vibrant_ink">Vibrant Ink</option>
 							</optgroup>
 						</select>
 					</td>
@@ -164,8 +161,8 @@
 			<div id="input-field"></div>
 			<button id="save-button" class="btn btn-primary btn-large">Save as URL</button>
 			<br/><br/>
-			<div id="view" style="display:none;">
-				<input id="input-url" name="field" type="text" readonly onClick="this.select();" />
+			<div id="view" style="display:none">
+				<input id="input-url" type="text" readonly onclick="this.select()" />
 			</div>
 		</div>
 		<div>
